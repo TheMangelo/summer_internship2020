@@ -1,2 +1,2 @@
-# summer_internship2020
+# Summer internship
 Code for application for summer interntships 
