@@ -54,16 +54,10 @@ def maxProduct(inputList):
 
         # If there is exactly two positives the function the result will be a negative number
         elif(len(posList) == 2):
-            # print('-'*100)
-            negListAbsolute = sorted([-i for i in negList])
-            # print(negListAbsolute)
-            # print(negListAbsolute[0], negListAbsolute[1])
-            maxAbsNeg = negListAbsolute[0]*negListAbsolute[1]
-            # print('MaxAbsNeg: ' + str(maxAbsNeg))
 
+            negListAbsolute = sorted([-i for i in negList])
+            maxAbsNeg = negListAbsolute[0]*negListAbsolute[1]
             minPos = posList[0] * posList[1]
-            # print('this is min pos ' + str(minPos))
-            # print('-'*100)
 
             if(maxAbsNeg < minPos):
                 sum = maxAbsNeg
