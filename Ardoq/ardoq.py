@@ -36,11 +36,12 @@ def maxProduct(inputList):
 
     # Only Positives
     if(len(negList) == 0):
-        return posList[0] * posList[1] * posList[2]
+        return productOfList(posList[0:3])
 
     # Only Negatives
     elif(len(posList) == 0):
-        return negList[-1] * negList[-2] * negList[-3]
+        return (productOfList(negList[-3:]))
+        # return negList[-1] * negList[-2] * negList[-3]
 
     else:
         # If Only One negative
@@ -98,8 +99,10 @@ onlyPositives = [1, 2, 3, 4, 5, 6]  # Should be 120
 oneNeg = [1, 2, 3, 4, -5, 6]  # Should be 72
 twoNeg = [1, 2, 3, 4, -5, -6]  # Should be 120
 threeNeg = [1, 2, 3, -4, -5, -6]  # Should be 90
+onlyNegatives = [-1, -2, -3, -4, -5, -6]  # Should be
 
 print('Expected result 120. \nActual result: \t' + str(maxProduct(onlyPositives)))
 print('Expected result 72. \nActual result: \t' + str(maxProduct(oneNeg)))
 print('Expected result 120. \nActual result: \t' + str(maxProduct(twoNeg)))
 print('Expected result 90. \nActual result: \t' + str(maxProduct(threeNeg)))
+print('Expected result -6. \nActual result: \t' + str(maxProduct(onlyNegatives)))
