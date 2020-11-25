@@ -89,7 +89,7 @@ def maxProduct(inputList):
 
 
 a = [1, 2, -1, -5, - 100, -200, -300]  # Should return -2
-b = [100, 200, -1, -2, -3]  # Shoud return -6
+b = [100, 200, -1, -2, -3, -100, -1001]  # Shoud return -6
 
 print('Expected result -2. \nActual result: \t' + str(maxProduct(a)))
 print('Expected result -6. \nActual result: \t' + str(maxProduct(b)))
