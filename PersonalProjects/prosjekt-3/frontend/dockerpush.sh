@@ -1,0 +1,1 @@
+ssh -t it2810 "cd prosjekt-3/frontend && git pull && sudo ./deploy.sh"
